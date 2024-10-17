@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Jung Resume Website</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">Andrew Jung</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#professional">Professional Information</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+    </nav>
+
+    <!-- Home Page / Introduction -->
+    <header class="home" id="home">
+        <div class="intro">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+            <h1>Andrew Jung</h1>
+            <h2>Information Technology & Web Science Student</h2>
+            <p>Passionate about web development, AI training, and building scalable applications.</p>
+            <a href="#contact" class="cta-button">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- Professional Information Section -->
+    <section class="professional" id="professional">
+        <!-- About Me Section -->
+        <div class="about">
+            <h2>About Me</h2>
+            <p>
+                I am currently pursuing a Bachelor of Science in Information Technology & Web Science at Rensselaer Polytechnic Institute, with a focus on Economics. I am passionate about web development, software engineering, and exploring the intersection of technology and society. I thrive in collaborative environments and enjoy solving challenging problems.
+            </p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills" id="skills">
+            <h2>Skills</h2>
+            <div class="technical-skills">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Programming Languages: Python, C++, JavaScript, HTML, CSS, PHP, SQL</li>
+                    <li>Tools & Platforms: GitHub, Microsoft Azure, Chrome DevTools, Valgrind</li>
+                    <li>APIs: Spotify Web API</li>
+                </ul>
+            </div>
+            <div class="soft-skills">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Leadership</li>
+                </ul>
+            </div>
+            <div class="skills-bars">
+                <!-- Visual representation of skills, e.g., progress bars -->
+                <div class="skill-bar">
+                    <span>JavaScript</span>
+                    <div class="bar"><div class="progress js" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <span>Python</span>
+                    <div class="bar"><div class="progress python" style="width: 90%;"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="experience" id="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Data Annotations AI Trainer - Software Developer</h3>
+                <p>April 2024 - September 2024</p>
+                <p>Evaluated and graded AI-generated code responses to user prompts, identifying and correcting errors to enhance model accuracy. Worked with various programming languages including Python, C++, HTML/CSS, and JavaScript.</p>
+            </div>
+            <div class="job">
+                <h3>RPI Mueller Center Supervisor</h3>
+                <p>August 2022 - May 2023</p>
+                <p>Supervised front desk and cardio floor operations at RPI's Mueller Center, ensuring safety and satisfaction of patrons. Managed customer service inquiries and resolved conflicts efficiently.</p>
+            </div>
+            <div class="job">
+                <h3>Baylor College Of Medicine Research Observer - Dr. Putluri's Lab</h3>
+                <p>May 2019 - August 2019</p>
+                <p>Assisted researchers in conducting experiments and data collection. Ensured accuracy in data recording and performed in-depth data analysis using Microsoft Excel.</p>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="education" id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>BS Information Technology & Web Science - Economics Focus</h3>
+                <p>Rensselaer Polytechnic Institute, Expected May 2026</p>
+            </div>
+            <div class="education-item">
+                <h3>Relevant Courses</h3>
+                <p>Web Systems Development, IT & Society, Data Structures, Principles of Economics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Portfolio Section -->
+    <section class="projects" id="projects">
+        <h2>Projects / Portfolio</h2>
+        <div class="project">
+            <h3>Aggregator of Music Albums (AMA)</h3>
+            <p>August 2024 - Current</p>
+            <p>Developed a music review aggregation website consolidating reviews from platforms like Pitchfork and Discogs using various APIs. Implemented a scalable architecture with HTML, CSS, JavaScript, PHP, and MySQL.</p>
+        </div>
+        <div class="project">
+            <h3>Wrapped Now</h3>
+            <p>January 2024 - May 2024</p>
+            <p>Developed a web application that provides Spotify users with personalized listening statistics. Implemented Spotify Web API with JavaScript, ensuring secure user authentication and a smooth user experience.</p>
+        </div>
+        <div class="project">
+            <h3>Personal Website</h3>
+            <p>June 2023 - August 2023</p>
+            <p>Fully developed and deployed a personal website to enhance front-end and back-end development skills. Utilized GitHub for version control and Microsoft Azure for hosting.</p>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section class="hobbies" id="hobbies">
+        <h2>Hobbies</h2>
+        <p>In my free time, I enjoy exploring new music genres, working on personal tech projects, and participating in community events with my fraternity.</p>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:jung.andrew22@gmail.com">jung.andrew22@gmail.com</a></p>
+            <p>Phone: 832-951-3224</p>
+            <div class="social-media">
+                <a href="https://linkedin.com/in/andrewjung26" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Resume Button -->
+    <footer>
+        <a href="resume.pdf" download class="download-resume-button">Download Resume</a>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
