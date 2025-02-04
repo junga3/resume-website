@@ -1,0 +1,242 @@
+/*! minireset.css v0.0.6 github.com/jgthms/minireset.css */
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: #121212; /* Dark background */
+	color: #e0e0e0;            /* Light text color */
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration-line: underline;
+	text-decoration-color: #e0e0e0; /* Light text decoration */
+}
+
+button a:hover{
+	text-decoration-color: white;
+}
+
+#hero{
+	width: 98vw;
+	height: 100vh;
+	margin: 0 auto;
+	margin-bottom: 5rem;
+}
+
+#welcome{
+	position: absolute;
+	bottom: 15%;
+	left: 10%;
+}
+
+@media only screen and (max-width: 500px) {
+	h1{
+		font-size: 26px !important;
+	}
+}
+
+#navigation{
+	position: absolute;
+	top: 5%;
+	right: 10%;
+	font-size: 22px;
+	text-align: right;
+	transition: top 1.2s;
+}
+
+#navigation ul li {
+	margin-top: 20px;
+}
+
+#navigation a {
+	color: #e0e0e0; /* Navigation link color */
+}
+
+#logo{
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: solid 2px #e0e0e0;
+}
+
+svg{
+	fill: #e0e0e0; 
+	width: 30px;
+	height: 30px;
+}
+
+#to-bottom{
+	position: absolute;
+	bottom: 4%;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+h1{
+	font-size: 38px;
+	font-family: monospace;
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 3px solid #e0e0e0;
+	width: 19ch;
+	animation: 
+		typing 4s steps(19),
+		blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+	from { width: 0ch; }
+	to { width: 19ch; }
+}
+
+/* Typewriter cursor effect */
+@keyframes blink-caret {
+	from, to { border-color: transparent; }
+	50% { border-color: #e0e0e0; }
+}
+
+h2{
+	font-size: 22px;
+}
+
+h3{
+	font-size: 32px;
+	margin-bottom: 60px;
+	margin-top: 20px;
+	min-height: 160px;
+	padding-top: 120px;
+}
+
+p{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+#subline{
+	margin-top: 10px;
+}
+
+#site-content{
+	max-width: 750px;
+	margin: 0 auto;
+	padding: 0 5vw;
+}
+
+blockquote {
+	border-left: 3px solid #888;
+	color: #ccc;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 1.8em;
+	padding: 1em 2em;
+	margin: 4rem 0;
+	position: relative;
+	transition: 0.2s border ease-in-out;
+	z-index: 0;
+}
+
+#extra-header{
+	display: none;
+	position: fixed;
+	width: 100vw;
+	height: 50px;
+	padding: 5px;
+	margin: 0 auto;
+	z-index: 10;
+	background-color: #1e1e1e;
+	-webkit-box-shadow: 0 3px 5px rgba(255, 255, 255, 0.1);
+	-moz-box-shadow: 0 3px 5px rgba(255, 255, 255, 0.1);
+	box-shadow: 0 3px 5px rgba(255, 255, 255, 0.1);
+}
+
+#extra-logo{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: solid 1px #e0e0e0;
+}
+
+#extra-navigation{
+	margin-top: 5px;
+}
+
+#header-container{
+	margin: 0 5vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.moved-navigation{
+	top: 35vh !important;
+}
+
+.content-container{
+	height: 100%x;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	box-shadow: rgba(255, 255, 255, 0.1) 0px 3px 8px;
+}
+
+.content-heading{
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.content-description{
+	text-align: justify;
+}
+
+.content-button-container{
+	margin-bottom: 80px;
+}
+
+button{
+	font-family: inherit;
+	font-size: 16px;
+	color: #121212; /* Dark text color on light button */
+	height: 40px;
+	padding: 5px 15px;
+	background-color: #e0e0e0; /* Light button background */
+	border-radius: 20px;
+	border: none;
+	box-shadow: rgba(255, 255, 255, 0.2) 0px 3px 8px;
+}
+
+button a{
+	color: #121212;
+}
+
+.cta-button{
+	font-size: 18px;
+	width: 200px;
+	height: 43px;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+
+#cta-container{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10rem;
+	margin-top: 5rem;
+}
